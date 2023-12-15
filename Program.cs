@@ -4,7 +4,14 @@
 // Размер массива должен быть равен количеству цифр.
 
 
-int[] array = {1,13,65,48,10000};
+int[] array = new int [5];
+int number = 99523;
 for (int i =0; i<array.Length; i++)
-{
+{ 
+array[i] = number/10000;
+number /=1000;
+number /=100;
+number /=10;
+number/=1;
 Console.Write(array[i] + ",");
+}
